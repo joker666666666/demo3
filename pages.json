@@ -1,0 +1,186 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+			
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首?页",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "false"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/route_planning/route_planning",
+			"style": {
+				"navigationBarTitleText": "路径规划",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/cur_order/one2one",
+			"style": {
+				"navigationBarTitleText": "一车一单",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/cur_order/one2many",
+			"style": {
+				"navigationBarTitleText": "一车多单",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/cur_order/many2one",
+			"style": {
+				"navigationBarTitleText": "多车一单",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/order_history/order_history",
+			"style": {
+				"navigationBarTitleText": "订单列表",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/order_history/details",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/person_info/person_info",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+				// "navigationBarBackgroundColor":"#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/home/system_settings/system_settings",
+			"style": {
+				"navigationBarTitleText": "系统设置",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/route_planning/navigation",
+			"style": {
+				"navigationBarTitleText": "开始导航",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "true"
+					}
+				}
+			}
+		}
+	],
+	"condition":{
+		"current":1,
+		"list":[
+			{
+				"name":"login",
+				"path":"pages/login/login"
+			},
+			{
+				"name":"home",
+				"path":"pages/home/home"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8"
+	}
+	//2022-04-26 不要底部导航
+	// "tabBar": { //底部导航
+	// 	"color":"#bfbfbf",
+	// 	"selectedColor":"#515151",
+	// 	"borderStyle":"black",
+	// 	"backgroundColor":"#ffffff",
+	// 	"list": [
+	// 		{
+	// 			"pagePath":"pages/home/home",
+	// 			"text":"首页",
+	// 			"iconPath":"static/logo.png",
+	// 			"selectedIconPath":"static/logo.png"
+	// 		},
+	// 		{
+	// 			"pagePath":"pages/index/index",
+	// 			"text":"路径规划",
+	// 			"iconPath":"static/logo.png",
+	// 			"selectedIconPath":"static/logo.png"
+	// 		},
+	// 		{
+	// 			"pagePath":"pages/home/cur_order/one2one",
+	// 			"text":"一车一单",
+	// 			"iconPath":"static/logo.png",
+	// 			"selectedIconPath":"static/logo.png",
+	// 			"visible": false
+	// 		},
+	// 		{
+	// 			"pagePath":"pages/home/cur_order/one2many",
+	// 			"text":"一车多单",
+	// 			"iconPath":"static/logo.png",
+	// 			"selectedIconPath":"static/logo.png",
+	// 			"visible": false
+	// 		},
+	// 		{
+	// 			"pagePath":"pages/home/cur_order/many2one",
+	// 			"text":"多车一单",
+	// 			"iconPath":"static/logo.png",
+	// 			"selectedIconPath":"static/logo.png",
+	// 			"visible": false
+	// 		}
+	// 	]
+	// }
+}
